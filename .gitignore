@@ -137,3 +137,33 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# ==========================
+# Python
+# ==========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+# Common names for local virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Testing and type checking cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# ==========================
+# System Files
+# ==========================
+.DS_Store
+Thumbs.db§

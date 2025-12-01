@@ -1,0 +1,29 @@
+{
+  "name": "advent-of-code-2025",
+  "version": "1.0.0",
+  "description": "My solutions for Advent of Code 2025 challenges.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "day01:js": "node js/day01.js",
+    "day01:py": "python3 python/day01.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninalining/advent-of-code-2025.git"
+  },
+  "keywords": [
+    "advent-of-code",
+    "coding-challenges",
+    "2025",
+    "javascript",
+    "python"
+  ],
+  "author": "Nina Li",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ninalining/advent-of-code-2025/issues"
+  },
+  "homepage": "https://github.com/ninalining/advent-of-code-2025#readme"
+}
