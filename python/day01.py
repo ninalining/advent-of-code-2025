@@ -18,7 +18,7 @@ for line in lines:
     remainder = amount % 100
 
     if direction == 'L':
-        if position != 0 and position - remainder <= 0:
+        if position - remainder < 0:
             counter += 1
         position = (position - remainder) % 100
     elif direction == 'R':
