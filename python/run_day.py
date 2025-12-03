@@ -15,7 +15,7 @@ def main() -> int:
     day_arg = sys.argv[1] if len(sys.argv) > 1 else "01"
     day = day_arg.zfill(2)
 
-    script_path = Path(__file__).with_name(f"day{day}.py")
+    script_path = Path(__file__).parent / f"day{day}" / f"day{day}.py"
     if not script_path.exists():
         print(f"No Python solution found for day {day}. Expected file: {script_path}")
         return 1
