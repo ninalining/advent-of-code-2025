@@ -6,7 +6,7 @@ Advent of Code 2025 - Day 1 Solution in Python
 
 import utils
 
-lines = utils.read_input('day01.txt')
+lines = utils.read_input('inputs01.txt')
 
 position = 50
 counter = 0
