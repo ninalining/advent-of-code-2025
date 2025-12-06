@@ -18,20 +18,35 @@ for value in values:
     stop = int(stop_str)
     ranges.append((start, stop))
 
-def is_half_match(number: int) -> bool:
-    """return True if number meets half-match criteria."""
+def is_match (number: int) -> bool:
+    """
+    quiz 2: return true if number meets match criteria.
+    """
     digits = str(abs(number))
     lens = len(digits)
-    if lens % 2 != 0:
-        return False
-    half = lens // 2
-    return digits[:half] == digits[half:]
+    for i in range(1, (lens//2)+1):
+        if lens % i == 0:
+            pattern = digits[:i]
+            if pattern * (lens // i) == digits:
+                return True
+    return False
+
+# def is_half_match(number: int) -> bool:
+#     """
+#     quiz 1: return True if number meets half-match criteria.
+#     """
+#     digits = str(abs(number))
+#     lens = len(digits)
+#     if lens % 2 != 0:
+#         return False
+#     half = lens // 2
+#     return digits[:half] == digits[half:]
 
 match_numbers = []
 
 for start, stop in ranges:
     for number in range(start, stop + 1):
-        if is_half_match(number):
+        if is_match(number):
             match_numbers.append(number)
 
 print(f"Sum of all matching numbers: {sum(match_numbers)}")
